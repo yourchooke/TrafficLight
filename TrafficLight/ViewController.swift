@@ -17,9 +17,9 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        redLightView.layer.cornerRadius = 180
-        yellowLightView.layer.cornerRadius = 180
-        greenLightView.layer.cornerRadius = 180
+        redLightView.layer.cornerRadius = 90
+        yellowLightView.layer.cornerRadius = 90
+        greenLightView.layer.cornerRadius = 90
     }
 
     @IBAction func switchColorButtonPress(_ sender: Any) {
