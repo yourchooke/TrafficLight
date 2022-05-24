@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
@@ -24,63 +24,54 @@
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="174" id="NN7-zz-2vb"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain">
+                                <buttonConfiguration key="configuration" style="plain" title="Start">
                                     <backgroundConfiguration key="background">
                                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </backgroundConfiguration>
-                                    <attributedString key="attributedTitle">
-                                        <fragment content="Start">
-                                            <attributes>
-                                                <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                                <font key="NSFont" size="32" name="Helvetica"/>
-                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                            </attributes>
-                                        </fragment>
-                                    </attributedString>
-                                    <color key="baseForegroundColor" name="AccentColor"/>
+                                    <fontDescription key="titleFontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="32"/>
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="switchColorButtonPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RdX-lw-O7e"/>
                                 </connections>
                             </button>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aKD-6s-UZF">
-                                <rect key="frame" x="117" y="281.5" width="180" height="180"/>
-                                <color key="backgroundColor" systemColor="systemYellowColor"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="aKD-6s-UZF" secondAttribute="height" multiplier="1:1" id="J1S-w7-ug1"/>
-                                </constraints>
-                            </view>
                             <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mqm-bO-2dt">
-                                <rect key="frame" x="117" y="93" width="180" height="180.5"/>
+                                <rect key="frame" x="100.66666666666669" y="64" width="213" height="213"/>
                                 <color key="backgroundColor" systemColor="systemRedColor"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="mqm-bO-2dt" secondAttribute="height" multiplier="1:1" id="YVD-OM-PaZ"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eLh-zz-KUC">
-                                <rect key="frame" x="117" y="469.5" width="180" height="180.5"/>
-                                <color key="backgroundColor" systemColor="systemGreenColor"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eLh-zz-KUC" colorLabel="IBBuiltInLabel-Red">
+                                <rect key="frame" x="100.66666666666669" y="285" width="213" height="213"/>
+                                <color key="backgroundColor" systemColor="systemYellowColor"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="eLh-zz-KUC" secondAttribute="height" multiplier="1:1" id="cWw-qD-UAb"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aKD-6s-UZF">
+                                <rect key="frame" x="100.66666666666669" y="506" width="213" height="213"/>
+                                <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="aKD-6s-UZF" secondAttribute="height" multiplier="1:1" id="J1S-w7-ug1"/>
                                 </constraints>
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="mqm-bO-2dt" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="49" id="33X-ip-Fbl"/>
-                            <constraint firstItem="6nE-3G-qBJ" firstAttribute="top" secondItem="eLh-zz-KUC" secondAttribute="bottom" constant="107" id="7ee-EE-Rut"/>
-                            <constraint firstItem="eLh-zz-KUC" firstAttribute="top" secondItem="aKD-6s-UZF" secondAttribute="bottom" constant="8" symbolic="YES" id="Gzl-Zf-cHS"/>
-                            <constraint firstItem="eLh-zz-KUC" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Jjp-J3-OVx"/>
-                            <constraint firstItem="aKD-6s-UZF" firstAttribute="centerX" secondItem="mqm-bO-2dt" secondAttribute="centerX" id="Kyu-6K-gsg"/>
-                            <constraint firstItem="mqm-bO-2dt" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Pql-i1-X85"/>
-                            <constraint firstItem="eLh-zz-KUC" firstAttribute="centerX" secondItem="mqm-bO-2dt" secondAttribute="centerX" id="QVk-aa-W8O"/>
+                            <constraint firstItem="eLh-zz-KUC" firstAttribute="height" secondItem="mqm-bO-2dt" secondAttribute="height" id="0zv-C8-XdE"/>
+                            <constraint firstItem="aKD-6s-UZF" firstAttribute="width" secondItem="eLh-zz-KUC" secondAttribute="width" id="Gcp-Tq-YUc"/>
+                            <constraint firstItem="eLh-zz-KUC" firstAttribute="top" secondItem="mqm-bO-2dt" secondAttribute="bottom" constant="8" symbolic="YES" id="HUW-Fq-Lpg"/>
+                            <constraint firstItem="aKD-6s-UZF" firstAttribute="centerX" secondItem="mqm-bO-2dt" secondAttribute="centerX" id="XAY-cd-dQQ"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="6nE-3G-qBJ" secondAttribute="bottom" constant="20" id="ZKX-R3-1IN"/>
-                            <constraint firstItem="eLh-zz-KUC" firstAttribute="height" secondItem="mqm-bO-2dt" secondAttribute="height" id="d0P-wZ-vW6"/>
-                            <constraint firstItem="eLh-zz-KUC" firstAttribute="centerX" secondItem="mqm-bO-2dt" secondAttribute="centerX" id="gve-Z8-nRX"/>
-                            <constraint firstItem="aKD-6s-UZF" firstAttribute="top" secondItem="mqm-bO-2dt" secondAttribute="bottom" constant="8" symbolic="YES" id="paq-i0-zHu"/>
-                            <constraint firstItem="aKD-6s-UZF" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="stW-fK-RrM"/>
-                            <constraint firstItem="aKD-6s-UZF" firstAttribute="height" secondItem="mqm-bO-2dt" secondAttribute="height" id="xnv-7n-sL5"/>
+                            <constraint firstItem="eLh-zz-KUC" firstAttribute="centerX" secondItem="mqm-bO-2dt" secondAttribute="centerX" id="fcY-cu-YGZ"/>
+                            <constraint firstItem="aKD-6s-UZF" firstAttribute="height" secondItem="eLh-zz-KUC" secondAttribute="height" id="g5t-Wl-JLy"/>
+                            <constraint firstItem="mqm-bO-2dt" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="h1Z-Un-voQ"/>
+                            <constraint firstItem="eLh-zz-KUC" firstAttribute="centerX" secondItem="6nE-3G-qBJ" secondAttribute="centerX" id="mQ2-sn-Zto"/>
+                            <constraint firstItem="6nE-3G-qBJ" firstAttribute="top" secondItem="aKD-6s-UZF" secondAttribute="bottom" constant="38" id="qIF-Cb-ZQZ"/>
+                            <constraint firstItem="eLh-zz-KUC" firstAttribute="width" secondItem="mqm-bO-2dt" secondAttribute="width" id="tPS-Zr-KqI"/>
+                            <constraint firstItem="aKD-6s-UZF" firstAttribute="top" secondItem="eLh-zz-KUC" secondAttribute="bottom" constant="8" symbolic="YES" id="ynD-od-BIT"/>
                             <constraint firstItem="6nE-3G-qBJ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="zcd-4q-xvd"/>
                         </constraints>
                         <variation key="heightClass=regular-widthClass=compact">
@@ -98,13 +89,10 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-26.25" y="63.380281690140848"/>
+            <point key="canvasLocation" x="-29.439252336448597" y="62.203023758099356"/>
         </scene>
     </scenes>
     <resources>
-        <namedColor name="AccentColor">
-            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
         <systemColor name="systemGreenColor">
             <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
